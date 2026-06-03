@@ -3,6 +3,7 @@ import CarIcon from "../../icons/car-icon.svg?react"
 import BusIcon from "../../icons/bus-icon.svg?react"
 import { LazyDiv } from "../lazyDiv"
 import { LOCATION, LOCATION_ADDRESS } from "../../const"
+import { MdRestaurantMenu, MdOutlineSoupKitchen } from "react-icons/md";
 
 /**
  * 오시는 길 정보를 표시하는 컴포넌트입니다.
@@ -23,65 +24,31 @@ export const Location = () => {
         <Map />
       </LazyDiv>
 
-      {/* 대중교통 및 자가용 안내 섹션 */}
+      {/* 상견례 코스 요리 메뉴 섹션 */}
       <LazyDiv className="card location">
-        {/* 대중교통 안내 */}
         <div className="location-info">
           <div className="transportation-icon-wrapper">
-            <BusIcon className="transportation-icon" />
+            {/* react-icons에서 가져온 레스토랑 아이콘을 기존 템플릿 클래스에 맞게 적용 */}
+            <MdRestaurantMenu className="transportation-icon" />
           </div>
-          <div className="heading">대중교통</div>
+          <div className="heading">오늘의 코스 요리</div>
           <div />
-          <div className="content">
-            * 지하철 이용시
+          <div className="content" style={{ lineHeight: "2.4" }}>
+            {/* 메뉴 목록 (br 태그로 줄바꿈) */}
+            <MdOutlineSoupKitchen style={{ verticalAlign: 'text-top', marginRight: '4px' }}/> 
+            삼품 냉채
             <br />
-            지하철 2호선 <b>낙성대역 4번출구</b> 나와서
+            해물 매생이 누룽지탕
             <br />
-            → 첫번째 골목 끼고 좌회전
-            <br />→ 마을버스 <b>관악 02번</b> 승차
-            <br />→ <b>서울대후문·연구공원 정류장</b> 하차
+            전가복
             <br />
-            → 길 건너 간판 참고해 도보로 100m 이동
+            칠리 중새우
             <br />
-            검은색 피라미드 유리 건물입니다.
-          </div>
-          <div />
-          <div className="content">
-            * 버스 이용 시
+            고추잡채와 꽃빵
             <br />
-            - 간선(파랑): 461, 641
+            식사 (짜장 / 짬뽕 / 볶음밥)
             <br />
-            - 지선(초록): 5413, 5524, 5528
-            <br />
-            반드시 <b>낙성대입구</b> 하차
-            <br />→ 마을버스 <b>관악 02번</b> 이용
-            <br />
-            이하 위와 동일합니다.
-          </div>
-        </div>
-
-        {/* 자가용 안내 */}
-        <div className="location-info">
-          <div className="transportation-icon-wrapper">
-            <CarIcon className="transportation-icon" />
-          </div>
-          <div className="heading">자가용</div>
-          <div />
-          <div className="content">
-            네이버 지도, 카카오 네비, 티맵 등 이용
-            <br />
-            <b>서울대학교 연구공원 웨딩홀</b> 검색
-            <br />
-            - 주차 요금은 무료입니다.
-            <br />
-            (주차장 이용 시 웨딩홀과 바로 연결)
-          </div>
-          <div />
-          <div className="content">
-            <b>
-              ※ 서울대학교 정, 후문을 통과할 경우 통행료가 발생하므로
-              유의바랍니다. 낙성대 방향으로 이용해주세요.
-            </b>
+            계절 후식
           </div>
         </div>
       </LazyDiv>
