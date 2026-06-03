@@ -102,7 +102,7 @@ export const Invitation = () => {
         <div className="content">
           {/* 신랑측 연락처 */}
           <div className="contact-info">
-            {GROOM_INFO.filter(({ phone }) => !!phone).map(
+            {GROOM_INFO.filter(({ phone, relation }) => !!phone && relation === "신랑").map(
               ({ relation, name, phone }) => (
                 <Fragment key={relation}>
                   <div className="relation">{relation}</div>
@@ -129,7 +129,7 @@ export const Invitation = () => {
           </div>
           {/* 신부측 연락처 */}
           <div className="contact-info">
-            {BRIDE_INFO.filter(({ phone }) => !!phone).map(
+            {BRIDE_INFO.filter(({ phone, relation }) => !!phone && relation === "신부").map(
               ({ relation, name, phone }) => (
                 <Fragment key={relation}>
                   <div className="relation">{relation}</div>
