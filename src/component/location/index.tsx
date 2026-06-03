@@ -33,9 +33,9 @@ export const Location = () => {
           </div>
           <div className="heading">오늘의 코스 요리</div>
           <div />
-          <div className="content" style={{ lineHeight: "2.4" }}>
+          {/* textAlign: "center" 를 추가하여 텍스트를 가운데로 정렬합니다. */}
+          <div className="content" style={{ lineHeight: "2.4", textAlign: "center" }}>
             {/* 메뉴 목록 (br 태그로 줄바꿈) */}
-            {/* <MdOutlineSoupKitchen style={{ verticalAlign: 'text-top', marginRight: '4px' }}/>  */}
             특품 냉채
             <br />
             삼선탕
@@ -53,6 +53,11 @@ export const Location = () => {
             짜장, 기스면, 짬뽕 택일
             <br />
             후식
+            
+            {/* 하단 추가 안내 문구 */}
+            <div style={{ fontSize: "0.85rem", color: "#8b7d6b", marginTop: "20px", lineHeight: "1.5" }}>
+              ☆ 원하는 메뉴 있으시면 대접하겠습니다! ☆
+            </div>
           </div>
         </div>
       </LazyDiv>
