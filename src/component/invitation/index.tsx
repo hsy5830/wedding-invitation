@@ -51,8 +51,8 @@ export const Invitation = () => {
         <div className="content">늘 든든한 울타리가 되어주신 가족분들을 모시고</div>
         <div className="content">인사를 나누는 자리를 마련했습니다.</div>
         <div className="break" />
-        <div className="content">바쁘시더라도 부디 참석하시어</div>
-        <div className="content">저희의 앞날을 기쁘게 축복해 주세요.</div>
+        <div className="content">두 가족이 만나 하나의 가족이 되는 뜻깊은 날,</div>
+        <div className="content">함께 자리하시어 따뜻한 축하를 나누어 주시면 감사하겠습니다.</div>
 
         <div className="break" />
 
