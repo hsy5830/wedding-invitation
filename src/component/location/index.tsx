@@ -57,7 +57,7 @@ export const Location = () => {
             
             {/* 하단 추가 안내 문구 */}
             <div style={{ fontSize: "0.85rem", color: "#8b7d6b", marginTop: "40px", lineHeight: "1.5", fontWeight: "bold" }}>
-              ☆ 원하는 메뉴 있으시면 대접하겠습니다! ☆
+              ☆ 원하는 메뉴 말씀하시면 대접하겠습니다! ☆
             </div>
           </div>
         </div>
