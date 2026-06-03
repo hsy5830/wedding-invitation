@@ -26,14 +26,16 @@ export const Location = () => {
 
       {/* 상견례 코스 요리 메뉴 섹션 */}
       <LazyDiv className="card location">
-        <div className="location-info">
-          <div className="transportation-icon-wrapper">
+        <div className="location-info" style={{ display: "block", position: "relative" }}>
+          
+          {/* 2. 아이콘 래퍼에 position: "absolute"를 주어 정중앙 정렬 흐름을 방해하지 않게 띄워줍니다 */}
+          <div className="transportation-icon-wrapper" style={{ position: "absolute", left: "10px", top: "5px" }}>
             <MdRestaurantMenu className="transportation-icon" />
           </div>
-          <div className="heading">오늘의 코스 요리</div>
-          <div />
           
-          {/* marginTop: "30px" 을 추가하여 제목과 메뉴 사이를 두 줄 정도 넓게 띄웁니다. */}
+          {/* 이제 아래 제목과 본문은 정확하게 카드 중심의 100% 정중앙으로 이동합니다 */}
+          <div className="heading" style={{ textAlign: "center", fontSize: "1.2rem" }}>귀한 분들을 위한 코스 요리</div>
+          
           <div className="content" style={{ lineHeight: "2.4", textAlign: "center", marginTop: "30px" }}>
             특품 냉채
             <br />
