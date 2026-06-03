@@ -37,7 +37,7 @@ export const Information2 = () => {
         <div className="content" style={{ lineHeight: "2.2" }}>
           <b>[ 예약 안내 ]</b>
           <br />
-          입구에서 예약자명 <b>'현승엽'</b> 또는 <b>'임채현'</b>을 말씀해 주시면
+          예약자명 <b>'임채현'</b>을 말씀해 주시면
           <br />
           준비된 룸으로 안내해 드립니다.
           <br />
@@ -46,7 +46,9 @@ export const Information2 = () => {
           <br />
           편안하고 부드러운 분위기의 상견례 자리이오니,
           <br />
-          너무 격식 차리지 않은 깔끔한 복장으로 (No Tie!)
+          너무 격식 차리지 않은 깔끔한 복장으로 
+          <br />
+          (No Tie!)
           <br />
           가벼운 발걸음 해주시길 바랍니다.
         </div>
