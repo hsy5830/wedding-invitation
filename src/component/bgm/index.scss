@@ -1,0 +1,103 @@
+.bgm-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999; /* 화면 최상단에 고정 */
+
+  .bgm-button {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    color: var(--theme-color, #ea8a8a);
+    padding: 0;
+
+    &:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &.playing {
+      background: var(--theme-color, #ea8a8a);
+      color: #ffffff;
+      box-shadow: 0 4px 20px rgba(234, 138, 138, 0.4);
+    }
+  }
+
+  /* 재생 중일 때 나타나는 4개의 음파 애니메이션 */
+  .music-waves {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 16px;
+
+    .wave-bar {
+      width: 3px;
+      height: 100%;
+      background-color: currentColor;
+      border-radius: 2px;
+      transform-origin: bottom;
+      animation: bounce 1.2s ease-in-out infinite alternate;
+
+      &:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      &:nth-child(2) {
+        animation-delay: 0.3s;
+        animation-duration: 0.8s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0s;
+        animation-duration: 1s;
+      }
+      &:nth-child(4) {
+        animation-delay: 0.4s;
+        animation-duration: 1.4s;
+      }
+    }
+  }
+
+  .music-muted {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scaleY(0.2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* 모바일 화면 대응을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+  .bgm-container {
+    bottom: 1.5rem;
+    right: 1.5rem;
+
+    .bgm-button {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
