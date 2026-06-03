@@ -28,14 +28,13 @@ export const Location = () => {
       <LazyDiv className="card location">
         <div className="location-info">
           <div className="transportation-icon-wrapper">
-            {/* react-icons에서 가져온 레스토랑 아이콘을 기존 템플릿 클래스에 맞게 적용 */}
             <MdRestaurantMenu className="transportation-icon" />
           </div>
           <div className="heading">오늘의 코스 요리</div>
           <div />
-          {/* textAlign: "center" 를 추가하여 텍스트를 가운데로 정렬합니다. */}
-          <div className="content" style={{ lineHeight: "2.4", textAlign: "center" }}>
-            {/* 메뉴 목록 (br 태그로 줄바꿈) */}
+          
+          {/* marginTop: "30px" 을 추가하여 제목과 메뉴 사이를 두 줄 정도 넓게 띄웁니다. */}
+          <div className="content" style={{ lineHeight: "2.4", textAlign: "center", marginTop: "30px" }}>
             특품 냉채
             <br />
             삼선탕
@@ -55,7 +54,7 @@ export const Location = () => {
             후식
             
             {/* 하단 추가 안내 문구 */}
-            <div style={{ fontSize: "0.85rem", color: "#8b7d6b", marginTop: "20px", lineHeight: "1.5" }}>
+            <div style={{ fontSize: "0.85rem", color: "#8b7d6b", marginTop: "40px", lineHeight: "1.5", fontWeight: "bold" }}>
               ☆ 원하는 메뉴 있으시면 대접하겠습니다! ☆
             </div>
           </div>
