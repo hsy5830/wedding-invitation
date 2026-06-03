@@ -1,6 +1,6 @@
 {
-  "short_name": "<%= GROOM_FULLNAME %> ❤️ <%= BRIDE_FULLNAME %> 상견례 초대장.",
-  "name": "<%= GROOM_FULLNAME %> ❤️ <%= BRIDE_FULLNAME %> 상견례 초대장.",
+  "short_name": "<%= GROOM_FULLNAME %> ❤️ <%= BRIDE_FULLNAME %> 상견례 초대장",
+  "name": "<%= GROOM_FULLNAME %> ❤️ <%= BRIDE_FULLNAME %> 상견례 초대장",
   "icons": [
     {
       "src": "favicon.ico",
