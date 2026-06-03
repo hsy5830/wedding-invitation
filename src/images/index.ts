@@ -10,6 +10,10 @@ import image8 from "./image8.jpeg"
 import image9 from "./image9.jpeg"
 import image10 from "./image10.jpeg"
 import image11 from "./image11.jpeg"
+import image12 from "./image12.jpeg"
+import image13 from "./image13.jpeg"
+import image14 from "./image14.jpeg"
+import image15 from "./image15.jpeg"
 
 /**
  * 메인 커버 이미지
@@ -21,14 +25,16 @@ export const COVER_IMAGE = coverImage
  */
 export const GALLERY_IMAGES = [
   image1,
-  image2,
-  image3,
-  image4,
-  image5,
   image6,
   image7,
-  image8,
+  image2,
+  image3,
   image9,
   image10,
+  image4,
+  image5,
   image11,
+  image13,
+  image14,
+  image15,
 ]
