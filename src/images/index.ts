@@ -11,7 +11,7 @@ import image9 from "./image9.jpeg"
 import image10 from "./image10.jpeg"
 import image11 from "./image11.jpeg"
 import image12 from "./image12.jpeg"
-import image13 from "./image13.jpeg"
+import image13 from "./image13.JPG"
 import image14 from "./image14.jpeg"
 import image15 from "./image15.jpeg"
 
