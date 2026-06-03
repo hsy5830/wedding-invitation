@@ -35,20 +35,24 @@ export const Location = () => {
           <div />
           <div className="content" style={{ lineHeight: "2.4" }}>
             {/* 메뉴 목록 (br 태그로 줄바꿈) */}
-            <MdOutlineSoupKitchen style={{ verticalAlign: 'text-top', marginRight: '4px' }}/> 
-            삼품 냉채
+            {/* <MdOutlineSoupKitchen style={{ verticalAlign: 'text-top', marginRight: '4px' }}/>  */}
+            특품 냉채
             <br />
-            해물 매생이 누룽지탕
+            삼선탕
             <br />
-            전가복
+            오룡해삼
             <br />
-            칠리 중새우
+            간소왕새우(칠리/깐풍)
             <br />
-            고추잡채와 꽃빵
+            생아스파라거스 관자
             <br />
-            식사 (짜장 / 짬뽕 / 볶음밥)
+            자연송이 안심
             <br />
-            계절 후식
+            꽃빵
+            <br />
+            짜장, 기스면, 짬뽕 택일
+            <br />
+            후식
           </div>
         </div>
       </LazyDiv>
